@@ -1,0 +1,563 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <title>Edyoda Stories</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+      * {
+        margin: 0;
+        padding: 0;
+
+        font-family: "raleway", sans-serif;
+      }
+
+      header {
+        display: flex;
+        width: 100%;
+        height: 80px;
+        background-color: #fff;
+        border: 1px solid lightgray;
+        box-shadow: 2px 2px 2px gray;
+        justify-content: space-between;
+      }
+      .blog-item1 {
+        float: left;
+        margin-left: 85px;
+      }
+
+      #logo{
+       
+        width: 130px;
+        font-size: 32px;
+    color: #0084ff;
+    font-weight: bolder;
+    font-family: "raleway", sans-serif;
+}
+      
+      .blog-item1 p {
+        font-size: 16px;
+        margin-top: -8px;
+      }
+
+      .blog-item2 p {
+        margin-top: 30px;
+        font-size: 17px;
+        margin-left: -114px;
+        word-spacing: 3px;
+      }
+      .dropdown {
+        margin-left: 8px;
+      }
+      .blog-item3 {
+        color: gray;
+        font-size: 17px;
+        margin-top: 20px;
+        margin-right: 20px;
+        word-spacing: 2px;
+        margin-left: 60px;
+      }
+
+      .blog-item4 {
+        margin-top: 20px;
+        margin-left: -119px;
+      }
+      button {
+        border: 1px solid#0084ff;
+        background-color: blue;
+        color: white;
+        font-size: 12px;
+        width: 175px;
+        height: 42px;
+        border-radius: 47px;
+        font-weight: bold;
+        cursor: pointer;
+        font-family: "raleway", sans-serif;
+        margin-right: 25px;
+      }
+      .content {
+        margin: 30px auto;
+        width: 70%;
+      }
+      .content h1 {
+        font-size: 33px;
+        font-family: "raleway", sans-serif;
+        margin-bottom: 25px;
+        font-weight: 900;
+      }
+      .content p {
+        font-size: 15px;
+        margin-bottom: 14px;
+        letter-spacing: 1px;
+        font-weight: 600;
+        font-family: "raleway", sans-serif;
+      }
+      .filter {
+        color: #0084ff;
+        margin-right: 10px;
+        margin-left: 6px;
+        font-size: 23px;
+      }
+      .content button {
+        height: 30px;
+        background-color: #f2f6ff;
+        color: #0084ff;
+        font-size: 13x;
+        border: 1px solid #0084ff;
+        border-radius: 15px;
+        font-family: "raleway", sans-serif;
+        margin: 2px;
+      }
+
+      .content button:hover {
+        background-color: #0084ff;
+        color: #f2f6ff;
+      }
+      #all {
+        width: 42px;
+      }
+     
+      #artificial {
+        width: 152px;
+      }
+      #cloud {
+        width: 129px;
+      }
+      #devops {
+        width: 67px;
+      }
+      #programming {
+        width: 175px;
+      }
+      #mobile {
+        width: 224px;
+      }
+      #technology {
+        width: 156px;
+      }
+      #company {
+        width: 197px;
+      }
+ #others {
+        width: 61px;
+        margin-top: 13px;
+      }
+
+      .article-one {
+        position: relative;
+        width: 70%;
+        height: auto;
+        display: flex;
+        margin: 20px auto;
+        overflow:hidden;
+      }
+   
+      .article-one article {
+        flex: 40%;
+        margin: 8px;
+        cursor: pointer;
+        line-height:normal;
+        height: 410px;
+        border: 1px solid #0084ff;
+        border-radius: 2px;
+        box-shadow: 3px 3px 2px grey;
+      }
+      .article-one article:hover{
+        border: 3px solid #172146;
+      }
+      article img {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 7px;
+      }
+      article h2 {
+        font-size: 20px;
+        width: 85%;
+
+        margin: 2px auto;
+        font-family: 'Raleway',sans-serif;
+      }
+      article h6 {
+        font-size: 14px;
+        width: 85%;
+        margin: 6px auto;
+        font-family: 'Raleway',sans-serif;
+        word-spacing: -4px;
+      color: rgba(0,0,0,0.6);
+      }
+      article h6 a {
+        color: #0084ff;
+        cursor: pointer;
+        word-spacing: 1px;
+      }
+      article h6 a:hover {
+        border-bottom: 1px solid #0084ff;
+      }
+
+      article p {
+        font-size: 16px;
+        width: 85%;
+        margin: 18px auto;
+        color: grey;
+        overflow: hidden;
+      }
+
+      footer {
+        height: auto;
+        width: 100%;
+        background-color: #172146;
+        display: flex;
+        font-family: 'Times New Roman', Times, serif;
+      }
+      .footer-item1{
+      margin-left: 80px;
+      line-height: 1.4;
+      color: white;
+      margin-top: 20px;
+        
+        
+        
+      }
+      .group1{
+color: gray;
+        font-size: 18px;
+        font-weight: 800;
+      }
+      .footer-item1,p{
+        font-size: 14px;
+
+
+      }
+      .footer-item2{
+        margin-left: 130px;
+        margin-top: 20px;
+        line-height: 1.4;
+        word-spacing: -5px;
+       
+      }
+      .group2{
+color: gray;
+font-size: 18px;
+
+font-weight: 800;
+      }
+      
+      ul{
+        list-style-type: none;
+      }
+      
+      li{
+        font-size: 16px;
+        text-decoration: none;
+        text-align: center;
+        text-align: justify;
+      
+        
+        
+
+      }
+      a{
+        text-decoration: none;color: white;
+      }
+      .footer-item3{
+        margin-left: 150px;
+        margin-top: 20px;
+        line-height: 1.4;
+       
+      }
+      .group3{
+color: gray;
+font-size:18px;
+
+font-weight: 800;
+      }
+      
+      ul{
+        list-style-type: none;
+      }
+      
+      li{
+        font-size: 16px;
+        text-decoration: none;
+        text-align: center;
+        text-align: justify;
+    }
+      a{
+        text-decoration: none;color: white;
+      }
+      .footer-item4{
+        margin-left: 230px;
+        margin-top: 20px;
+        line-height: 1.43;
+      }
+      .group4{
+color: gray;
+font-size:18px;
+
+font-weight: 800;}
+      .sub-item4,ul{
+        list-style-type: none;
+      }
+      
+      
+      li{font-size: 16px;
+        text-decoration: none;
+        text-align: center;
+        text-align: justify;
+    }
+      a{
+        text-decoration: none;color: white;
+      }
+    
+      .group5{
+color: gray;
+font-size:18px;
+
+font-weight: 800;}
+.sub-item4,ul{
+        list-style-type: none;
+      }
+      
+      li{
+        font-size: 16px;
+        text-decoration: none;
+        text-align: center;
+        text-align: justify;
+        
+    }
+      a{
+        text-decoration: none;
+        color: white;
+      }
+      
+      
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <div class="blog-item1">
+            <strong id="logo">EDYODA</strong>
+
+          <p><i>Stories</i></p>
+        </div>
+        <div class="blog-item2">
+          <p>Explore Categories<i class="fa fa-caret-down dropdown"></i></p>
+        </div>
+        <div class="blog-item3">
+          <p>EdYoda is a learning and knowledge</p>
+          <p>sharing platform for techies</p>
+        </div>
+        <div class="blog-item4">
+          <button>Go to main websites</button>
+        </div>
+      </header>
+
+      <div class="content">
+        <h1>Trending Posts</h1>
+        <p><i class="fa fa-filter filter"></i> Filter by Category</p>
+        <button class="btn-active" id="all">All</button>
+        <button id="artificial">Artificial Intelligance</button>
+        <button id="cloud">Cloud Computing</button>
+        <button id="devops">DevOps</button>
+        <button id="programming">Programming Languages</button>
+        <button id="mobile">Mobile Application Development</button>
+        <button id="technology">Technology and Tools</button>
+        <button id="company">Get a Job in a Tech Company</button>
+        <button id="others">Others</button>
+      </div>
+
+      <div class="article-one">
+        <article>
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/learn_machine_learning_courses_online.png"
+            alt="image"
+          />
+          <h2>Introduction To A Machine Learning Online Course.</h2>
+          <h6><a>Edyoda&nbsp;</a> | 05 Aug 2023</h6>
+          <p>
+            Machine learning is all about computers utilizing data, training on it and using statistical data to output values....
+          </p>
+        </article>
+        <article>
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/edyoda_WxvDSK1.jpg"
+            alt="image"
+          />
+          <h2>Introducing you all to EdYoda -</h2>
+          <h6><a>Edyoda&nbsp;</a> | 05 Aug 2023</h6>
+          <p>
+            Really ecstatic and immensely proud to introduce you all to our
+            latest attempt of adding value and making an impact to the world we
+            are a part of.
+          </p>
+        </article>
+        <article>
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/devops-edYoda-blog-small.jpg"
+            alt="image"
+          />
+          <h2>From identity crisis to the Success Story -</h2>
+          <h6><a>Edyoda&nbsp;</a>|05 Aug 2023</h6>
+          <p>
+            DevOps is a paradigm shift in the way how software products are
+            being built in the modern day Information Technology (IT)
+            organizations.
+          </p>
+        </article>
+      </div>
+      <div class="article-one">
+        <article>
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/6.png"
+            alt="image"
+          />
+          <h2>LAMP Stack Vs MEAN stack: Choosing the right platform for your web application development</h2>
+          <h6><a>Edyoda&nbsp;</a> | 05 Aug 2023</h6>
+          <p>
+            In today’s dynamic world, rapid web application development ....
+          </p>
+        </article>
+
+        <article>
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/ace-soft-skills-small.jpg"
+            alt="image"
+          />
+          <h2>Ace your Soft Skills - Tips to crack the job interview</h2>
+          <h6><a>Edyoda&nbsp;</a> | 05 Aug 2023</h6>
+          <p>
+            Soft skills are seen to be as important as your technical skill set.
+            When an organisation is hiring, soft skills is given a lot of weight
+            and pressure.
+          </p>
+        </article>
+
+       
+        <article>
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/cloud-meetup-edyoda-small_b2EXhBe.jpg"
+            alt="image"
+          />
+          <h2>edYoda Meetup #01 : A Date with Cloud</h2>
+          <h6><a>Edyoda&nbsp;</a> | 05 Aug 2023</h6>
+          <p>
+            I recently had the opportunity to lead the initiative to organize
+            the first Cloud meetup for edYoda. Here, I recount my experience in
+            organizing the very first
+          </p>
+        </article>
+      </div>
+      <div class="article-one">
+        <article>
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/what_is_isa_blog_1.png"
+            alt="image"
+          />
+          <h2>What is Income Share Agreement?</h2>
+          <h6><a>Edyoda&nbsp;</a> | 05 Aug 2023</h6>
+          <p>
+            The term Income Share Agreement has been around for a long time
+            since 1955 to be precise. Surprised, eh? It was first doing in the
+            1980s.
+          </p>
+        </article>
+        <article>
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/edyoda_blog_aws_cloudday_17may2018_Bangalore_small_ByulIE.jpg"
+            alt="image"
+          />
+          <h2>Amazon Web Services (AWS) Cloud Day -</h2>
+          <h6><a>Edyoda&nbsp;</a> | 05 Aug 2023</h6>
+          <p>
+            The AWS Cloud Day brings together the cloud computing community to
+            connect, collaborate and learn about AWS is something like very
+            simple.
+          </p>
+        </article>
+        <article>
+          <img
+            src="https://edyoda.s3.amazonaws.com/media/blog-images/understanding-devops.jpg"
+            alt="image"
+          />
+          <h2>Why do Database Systems Exist ?</h2>
+          <h6><a>Edyoda&nbsp;</a> | 05 Aug 2023</h6>
+          <p>
+            A couple of days back, I was having a code review of my program
+            which scraps the keyword insights from trending Tweets.
+          </p>
+        </article>
+        
+      </div>
+
+  
+        
+          
+
+</div>
+<footer>
+<div class="footer-item2"><h3 class="group2">EDYODA</h3>
+  <ul>
+<li><a href="#">About Us</a></li>
+<li><a href="#">Careers</a></li>
+<li><a href="#">Contact Us</a></li>
+  <li><a href="#">Terms of Use</a></li>
+    <li><a href="#">Privacy Policy</a></li>
+</ul>
+</div>
+
+<div class="footer-item3"><h3 class="group3">RESOURCES</h3>
+  <ul>
+<li><a href="#">Learning path</a></li>
+<li><a href="#">Courses</a></li>
+<li><a href="#">Learning videos</a></li>
+  <li><a href="#">Educators</a></li>
+    <li><a href="#">Edyoda stories</a></li>
+    <li><a href="#">University</a></li>
+</ul>
+</div>
+
+<div class="footer-item4"><h3 class="group4">FOR ENTERPRISES</h3>
+  <div class="sub-item4">
+
+  <ul>
+<li><a href="#">Train Your Employees</a></li></ul></div>
+<div class="group5">QUICK LINKS</div>
+<div class="sub-item5"><p>
+  <ul><li><a href="#">Learn and Earn</a></li>
+<li><a href="#">Become a Learning-Enabler</a></li>
+  <li><a href="#">Tips for Learning-Enabler</a></li>
+  <li><a href="#">Request New TopiC</a></li>
+  <li><a href="#">Certification</a></li>
+  <li><a href="#">Affiliate Program</a></li>
+    
+</ul>
+</div>
+</div>
+<div class="footer-item1">
+  <h3 class="group1">CONNECT</h3><p>1st Floor,<br/>
+Gopalan Millennium Tower,<br/>
+ITPL Main Rd, Brookefield,<br/>
+Bengaluru, Karnataka-560037,<br/>
+India.<br/>
+<a href="#" class="fa fa-envelope"></a>hello@edyoda.com<br/></p>
+<a href="#" class="fa fa-map-marker"></a>
+<a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-telegram"></a>
+
+<a href="#" class="fa fa-linkedin"></a>
+</footer>
+      <footer style="margin-left:550px; background-color: white;">
+        Copyright|2023 @Nagma AN
+      </footer>
+      
+    </main>
+  </body>
+</html>
